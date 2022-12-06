@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <title>
+        MatchDay
+    </title>
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="../">Match Schedule</a></li>
+            <li><a href="./teams">Teams</a></li>
+        </ul>
+    </nav>
+    {% block content %} {% for x in data %} {{x.team1 }} vs {{x.team2 }} {{x.venue }} <br> {% endfor %} {% endblock content %}
+
+    <a href="./change" id="submit">Click</a>
+
+
+    <footer>
+        <p>
+            Copyright ©-All rights are reserved
+        </p>
+
+    </footer>
+</body>
+
+</html>
+<a href="../">Home</a>.

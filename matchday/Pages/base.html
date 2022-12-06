@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <title>
+        MatchDay
+    </title>
+
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="../">Match Schedule</a></li>
+            <li><a href="">Teams</a></li>
+        </ul>
+    </nav>
+
+    {% block content %} {% for x in data %} {{x.pid }} {{x.name }} {{x.team }} {{x.role }} <br> {% endfor %} {% endblock content %}
+
+</body>
+
+</html>
+<a href="../">Home</a>.
